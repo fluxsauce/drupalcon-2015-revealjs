@@ -308,6 +308,94 @@
 			</section>
 		</section>
 		<section>
+			<section data-state="laback">
+				<img src="assets/masthead2logo.png" alt="">
+				<div class="title-block">
+					<h1>Content migrations</h1>
+					<h4 class="subtitle">WordPress, Vignette to Drupal</h4>
+				</div>
+			</section>
+			<section>
+				<h1>WordPress Challenges</h1>
+				<ul>
+					<li class="fragment">10 different blogs, structures, taxonomies</li>
+					<li class="fragment">Invalid markup</li>
+					<li class="fragment">Custom shortcodes, filters</li>
+				</ul>
+				<aside class="notes">Interviewed other teams</aside>
+			</section>
+			<section>
+				<h1>WordPress Migrate not enough</h1>
+				<h2 class="subtitle fragment">But still useful!</h2>
+				<ul>
+					<li class="fragment">Extended classes</li>
+					<li class="fragment">Helped normalize WXR structure</li>
+					<li class="fragment">Focus on custom logic</li>
+				</ul>
+			</section>
+			<section>
+				<h1>WordPress pre-processing</h1>
+				<ul>
+					<li class="fragment">Stripped comments</li>
+					<li class="fragment">Transformed identifiers</li>
+					<li class="fragment">Separated authors, images, tags</li>
+				</ul>
+			</section>
+			<section>
+				<h1>WordPress shortcodes, filters</h1>
+				<ul>
+					<li class="fragment">Implemented subset of shortcodes in Drupal</li>
+					<li class="fragment">Most not migrated</li>
+					<li class="fragment">Rendered as HTML in pre-processing</li>
+					<li class="fragment">Used WordPress libraries, existing code</li>
+					<li class="fragment">Faked WordPress bootstrap to execute natively</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Mapping WordPress tags on import</h1>
+				<ul>
+					<li class="fragment">Specific vocabularies</li>
+					<li class="fragment">New content types (people, creative works)</li>
+					<li class="fragment">CSV Spreadsheet used for defining rules</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Exporting from Vignette</h1>
+				<ul>
+					<li class="fragment">Rendered as XML files</li>
+					<li class="fragment">Most procs were rendered as HTML</li>
+					<li class="fragment">Transformed overloaded taxonomies to content</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Improving migration performance</h1>
+				<ul>
+					<li class="fragment">Validate all XML before ingestion</li>
+					<li class="fragment">Eliminate all PHP errors, warnings</li>
+					<li class="fragment">Avoid redundant migrations</li>
+					<li class="fragment">Use <code>cache_counts</code></li>
+				</ul>
+			</section>
+			<section>
+				<h1>Reducing migration overhead</h1>
+				<ul>
+					<li class="fragment">Disabled solr, pathauto, metatag, others during migration</li>
+					<li class="fragment">Indexing lookup tables</li>
+					<li class="fragment">Ran migrations in parallel</li>
+					<li class="fragment">Ensure HW resources are sufficient</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Redirect strategy</h1>
+				<ul>
+					<li class="fragment">Minimize Drupal performing redirects</li>
+					<li class="fragment">Redirect farm (rules, 1:1 redirects)</li>
+					<li class="fragment">DNS changes</li>
+					<li class="fragment">Redirects from migrated servers</li>
+				</ul>
+			</section>
+		</section>
+		<section>
 			<h1>Main Title</h1>
 			<ul>
 				<li>List Item</li>
