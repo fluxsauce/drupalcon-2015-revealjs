@@ -12,9 +12,6 @@
 <body>
 <div class="reveal">
 	<div class="slides">
-		<section data-state="laback">
-			<img src="assets/DrupalCon-LA_Logo_sRGB_20141204.png" alt="DrupalCon LA Logo">
-		</section>
 		<section>
 			<section data-state="laback">
 				<img src="assets/masthead2logo.png" alt="">
@@ -24,6 +21,12 @@
 			</section>
 			<section>
 				<h1>Who are we?</h1>
+				<div class="left">
+					<img class="bare" src="assets/4klogo.png" alt="Four Kitchens Logo"><br/>
+				</div>
+				<div class="right">
+					<img class="bare" src="assets/timeinclogo.png" alt="Time Inc. Logo">
+				</div>
 				<ul>
 					<li class="fragment">Jon Peck - <a href="https://www.drupal.org/u/fluxsauce">drupal.org/u/fluxsauce</a></li>
 					<li class="fragment">Matt Grill - <a href="https://www.drupal.org/u/drpal">drupal.org/u/drpal</a></li>
@@ -325,7 +328,7 @@
 				<aside class="notes">Interviewed other teams</aside>
 			</section>
 			<section>
-				<h1>WordPress Migrate not enough</h1>
+				<h1>wordpress_migrate not enough...</h1>
 				<h2 class="subtitle fragment">But still useful!</h2>
 				<ul>
 					<li class="fragment">Extended classes</li>
@@ -396,61 +399,57 @@
 			</section>
 		</section>
 		<section>
-			<h1>Main Title</h1>
-			<ul>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-				<li>List Item</li>
-			</ul>
-		</section>
-		<section>
-			<h1>Main Title</h1>
-
-			<h2 class="subtitle">Sub Header</h2>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet sem ac fringilla. Nulla facilisi. Vivamus lacinia gravida lacinia. Cras placerat non dui efficitur viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet dui efficitur viverra. </p>
-
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet sem ac fringilla. Nulla facilisi. Vivamus lacinia gravida lacinia. Cras placerat non dui efficitur viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet dui efficitur viverra. </p>
-		</section>
-		<section>
-			<h1>Main Title</h1>
-
-			<h2 class="subtitle">Sub Header</h2>
-
-			<div class="left">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet sem ac fringilla. Nulla facilisi. Vivamus lacinia gravida lacinia. Cras placerat non dui efficitur viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet dui efficitur viverra. </p>
-			</div>
-			<div class="right">
-				<p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet sem ac fringilla. Nulla facilisi. Vivamus lacinia gravida lacinia. Cras placerat non dui efficitur viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet dui efficitur viverra. </p>
-			</div>
-		</section>
-		<section data-state="laback">
-			<img src="assets/masthead2logo.png" alt="">
-
-			<div class="quote-slide">
-				<blockquote>
-					"This will be a quote about something by someone."
-				</blockquote>
-				<p class="quote-author">- Name of Quote Author</p>
-			</div>
-		</section>
-		<section>
-			<h1>Main Header</h1>
-			<h2 class="subtitle">Sub Header</h2>
-			<img src="assets/unsplash_525f012329589_2.jpg" alt="" class="thirds">
-			<img src="assets/unsplash_525f012329589_2.jpg" alt="" class="thirds">
-			<img src="assets/unsplash_525f012329589_2.jpg" alt="" class="thirds">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras congue sit amet sem ac fringilla. Nulla facilisi. </p>
+			<section data-state="laback">
+				<img src="assets/masthead2logo.png" alt="">
+				<div class="title-block">
+					<h1>Performance and caching</h1>
+				</div>
+			</section>
+			<section>
+				<h1>Frontend performance</h1>
+				<ul>
+					<li class="fragment">CSS is Sass and Compass optimized</li>
+					<li class="fragment">Targeted - only load needed CSS</li>
+					<li class="fragment">JavaScript is linted, strict standards</li>
+					<li class="fragment">JS in the footer (non-blocking)</li>
+				</ul>
+				<aside class="notes">Interviewed other teams</aside>
+			</section>
+			<section>
+				<h1>Frontend caching strategy</h1>
+				<ul>
+					<li class="fragment">Editorial 1 minute publish to live</li>
+					<li class="fragment">Ensure cacheable headers are set</li>
+					<li class="fragment">Shorter TTL on Akamai than Varnish</li>
+					<li class="fragment">Send purges on publishing</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Backend performance</h1>
+				<ul>
+					<li class="fragment">Eliminate PHP errors</li>
+					<li class="fragment">Cache, EXPLAIN custom queries</li>
+					<li class="fragment">Minimize unnecessary overhead</li>
+					<li class="fragment">Module count</li>
+					<li class="fragment">Benchmarking</li>
+				</ul>
+			</section>
+			<section>
+				<h1>Performance testing</h1>
+				<ul>
+					<li class="fragment">Load test production with migrated data</li>
+					<li class="fragment">blitz.io</li>
+					<li class="fragment">New Relic for introspection</li>
+					<li class="fragment">Exercised different content types, exceeded TTLs</li>
+					<li class="fragment"><a href="https://webpagetest.org">WebPageTest.org</a></li>
+				</ul>
+			</section>
 		</section>
 		<section data-state="laback">
 			<img src="assets/masthead2logo.png" alt="">
 			<h1 class="title end">What did you think?</h1>
-			<h4 class="subtitle">Evaluate this session -
-				<a href="http://losangeles2015.DRUPAL.ORG/schedule">losangeles2015.DRUPAL.ORG/schedule</a>
-			</h4>
+			<h4 class="subtitle">Evaluate this session<br/><a style="text-transform: lowercase;font-size: .5em;" href="https://events.drupal.org/losangeles2015/schedule/">events.drupal.org/losangeles2015/schedule/</a></h4>
+			<p></p>
 			<p class="thankyou">Thank You!</p>
 		</section>
 	</div>

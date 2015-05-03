@@ -6,3 +6,10 @@ html.laback .reveal h1.title {
 .reveal a {
   color: black;
 }
+
+.bare {
+    border: none !important;
+    box-shadow:none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+}
