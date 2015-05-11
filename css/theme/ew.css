@@ -13,3 +13,7 @@ html.laback .reveal h1.title {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
 }
+
+.reveal h6 {
+  font-size: .5em;
+}
